@@ -56,4 +56,16 @@ public class RechteckGraphics extends JPanel {
       }
     }
   }
+  
+  /**
+   * Gibt die gespeicherten Rechtecke als String-Array zurück.
+   * @return die gespeicherten Rechtecke
+   */
+  public String[] textListe() {
+    String[] tl = new String[rechtecke.length];
+    for(int i = 0; i < rechtecke.length; i++) {
+      tl[i] = i + " " + rechtecke[i].toString();
+    }
+    return tl;
+  }
 }

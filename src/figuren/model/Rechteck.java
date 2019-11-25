@@ -125,7 +125,7 @@ public class Rechteck {
      */
     @Override
     public String toString() {
-        String s = "Rechteck: (" + x + " / " + y + ") " + w + " x " + h+ " Farbe: " + farbe.getRGB();
+        String s = "(" + x + " / " + y + ") " + w + " x " + h+ " Farbe: " + farbe.getRGB();
         return s;
     }
 }
