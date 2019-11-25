@@ -6,10 +6,18 @@ import java.awt.event.ActionListener;
 import figuren.model.*;
 import figuren.view.*;
 
+/**
+ * Ablaufsteuerung für das Rechteck-Zeichen-Beispiel
+ * @author Lisa Vittori
+ * @version 2019-11-25
+ */
 public class FigurController implements ActionListener {
   private FigurPanel fp;
   private FigurenListe fl;
   
+  /**
+   * Erzeugt die Objekte für View und Model
+   */
   public FigurController() {
     fl = new FigurenListe();
     fp = new FigurPanel(fl, this);
@@ -17,6 +25,9 @@ public class FigurController implements ActionListener {
     
   }
 
+  /**
+   * Ereignissteuerung für die Buttons "Hinzufügen" und "Zurücksetzen"
+   */
   @Override
   public void actionPerformed(ActionEvent e) {
     String ac = e.getActionCommand();
@@ -40,6 +51,10 @@ public class FigurController implements ActionListener {
     }   
   }
   
+  /**
+   * Startet das Rechteck-Zeichenprogramm
+   * @param args nicht verwendet
+   */
   public static void main(String[] args) {
     new FigurController();
   }

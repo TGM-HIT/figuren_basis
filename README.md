@@ -11,3 +11,9 @@ Alle Abgaben entlang des Softwareentwicklungsprozesses können hier eingepflegt 
 - test: enthält die Testfälle, welche den Sourcecode testen
 
 Im src-Ordner sind folgende Packages und Klassen als Ausgangspunkt verfügbar:
+- figuren.model.Konstanten: Interface, das Konstanten für die GUI enthält. Derzeit ist eine Liste mit Farben und zugehörigen Farbnamen gespeichert.
+- figuren.model.Rechteck: Eine Klasse, die alle Daten und Methoden enthält, um ein Rechteck zu zeichnen.
+- figuren.model.FigurenListe: Verwaltet eine Liste an Rechtecken
+- figuren.view.RechteckGraphics: Zeichenfläche zum Darstellen der Rechtecke.
+- figuren.view.FigurPanel: Layout für das Erstellen, Verwalten und Zeichnen von Rechtecken
+- figuren.view.FigurFrame: Klasse zum Darstellen des Layouts in einem Fenster.
