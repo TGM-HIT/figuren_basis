@@ -23,8 +23,8 @@ public class FigurFrame extends JFrame {
     this.add(content);
     this.setResizable(resizable); 
     this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    this.setLocationRelativeTo(null);
     this.pack();
+    this.setLocationRelativeTo(null);
     this.setVisible(true);
   }
   
@@ -53,6 +53,7 @@ public class FigurFrame extends JFrame {
   public FigurFrame(String titel, Container content, boolean resizable, int width, int height) {
     this(titel, content, resizable);
     this.setSize(width, height);
+    this.setLocationRelativeTo(null);
   }
   
   /**
