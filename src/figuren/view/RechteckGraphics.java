@@ -11,10 +11,15 @@ import java.awt.*;
  * @version 2019-11-25
  */
 public class RechteckGraphics extends JPanel {
-  private FigurenListe figList;
+  private FigurenListe figList; // Da das Model mit der draw Methode extra
+                                // für das Zeichnen ausgelegt ist, gibt es
+                                // hier ausnahmsweise eine direkte Verbindung
+                                // von View zu Model
 
   /**
    * Erzeugt eine neue Zeichenumgebung ohne Rechtecke
+   * @param figList Die FigurenListe, die für das Zeichnen
+   * der Rechtecke herangezogen wird.
    */
   public RechteckGraphics(FigurenListe figList) {
     this.figList = figList;
