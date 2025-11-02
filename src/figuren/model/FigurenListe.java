@@ -9,12 +9,6 @@ import java.awt.*;
  */
 public class FigurenListe {
   private Rechteck[] rechtecke;
-  // um die Farben zu verwalten, static da diese für alle Panel-Objekte
-  // ident sind, final damit sie nicht geändert werden können.
-  public static final Color[] FARBEN = {Color.BLACK, Color.BLUE, Color.RED, 
-      Color.GREEN, Color.YELLOW, Color.WHITE};
-  public static final String[] FARBNAMEN = {"schwarz", "blau", "rot", 
-      "grün", "gelb", "weiß"};
   
   /**
    * Erstellt eine neue FigurenListe ohne Rechtecke
